@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/images/icon.ico" sizes="32x32">
+    <title>Audio Player</title>
+</head>
+
+<body>
+    <div class="wrapper-body">
+        <img src="./assets/images/jpg/micky.jpg" class="background" alt="background">
+        <audio src="./assets/music/Micky - This Is The Life.mp3" id="audio"></audio>
+        <div class="audio-player">
+            <div class="audio-player-wrapper">
+                <div class="background-player">
+                    <img src="./assets/images/jpg/micky.jpg" class="background-img" alt="background">
+                </div>
+                <div class="container-player">
+                    <div class="control">
+                        <div class="arrow control-icon">
+                            <img src="./assets/images/svg/icons8-end-100.png" class="arrow-prev" alt="arrow">
+                        </div>
+                        <div class="play-pause control-icon">
+                            <img src="./assets/images/svg/icons8-play-100.png" alt="play-pause" id="play">
+                            <img src="./assets/images/svg/icons8-pause-100.png" alt="play-pause" id="pause">
+                        </div>
+                        <div class="arrow control-icon">
+                            <img src="./assets/images/svg/icons8-end-100.png" class="arrow-next" alt="right">
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="name-artist name">Micky</div>
+                        <div class="name-song name">This is the life</div>
+                    </div>
+
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <div class="timeline">
+                            <input type="range" class="control-line" value="0" min="0">
+                        </div>
+                        <span class="length">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul class="footer-content">
+                <li>
+                    <h2>2023</h2>
+                </li>
+                <li><a href="https://github.com/dromari" class="github">
+                        <img src="./assets/images/png/github.png" alt="GitHub">
+                    </a></li>
+                <li><a href="https://rs.school/js/" class="rsschool">
+                        <img src="./assets/images/svg/rs_school_js.svg" alt="Rsschool">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
